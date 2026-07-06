@@ -2,7 +2,7 @@
 
 Esta carpeta ya esta preparada para que Netlify publique la web desde:
 
-`SM_Foods_Web`
+`C:\Users\samue\Desktop\SM_Foods_Landing`
 
 El archivo `netlify.toml` publica esta carpeta directamente.
 
