@@ -1,0 +1,352 @@
+﻿[
+    {
+        "Url":  "https://smfoodscompany.com/../img/home/parallax.jpg",
+        "File":  "imagenes\\original\\img\\home\\parallax.jpg",
+        "Bytes":  1006214
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/home/slider1.jpg",
+        "File":  "imagenes\\original\\img\\home\\slider1.jpg",
+        "Bytes":  579478
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/home/slider2.jpg",
+        "File":  "imagenes\\original\\img\\home\\slider2.jpg",
+        "Bytes":  297519
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/home/slider3.jpg",
+        "File":  "imagenes\\original\\img\\home\\slider3.jpg",
+        "Bytes":  543589
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/logo.png",
+        "File":  "imagenes\\original\\img\\logo.png",
+        "Bytes":  5247
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/logo1.png",
+        "File":  "imagenes\\original\\img\\logo1.png",
+        "Bytes":  5409
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/nosotros/banner.jpg",
+        "File":  "imagenes\\original\\img\\nosotros\\banner.jpg",
+        "Bytes":  10951
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/nosotros/planta1.jpg",
+        "File":  "imagenes\\original\\img\\nosotros\\planta1.jpg",
+        "Bytes":  10951
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/nosotros/planta2.jpg",
+        "File":  "imagenes\\original\\img\\nosotros\\planta2.jpg",
+        "Bytes":  10951
+    },
+    {
+        "Url":  "https://smfoodscompany.com/../img/parallax.jpg",
+        "File":  "imagenes\\original\\img\\parallax.jpg",
+        "Bytes":  10951
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-butifarras.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-butifarras.jpg",
+        "Bytes":  476978
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-chorizos.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-chorizos.jpg",
+        "Bytes":  534264
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-costillas.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-costillas.jpg",
+        "Bytes":  485077
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-hamburguesas.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-hamburguesas.jpg",
+        "Bytes":  417901
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-jamones.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-jamones.jpg",
+        "Bytes":  541611
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-madurados.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-madurados.jpg",
+        "Bytes":  10951
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-mortadelas.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-mortadelas.jpg",
+        "Bytes":  432297
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-salchichas.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-salchichas.jpg",
+        "Bytes":  500412
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-salchichones.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-salchichones.jpg",
+        "Bytes":  473233
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-tocinetas.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-tocinetas.jpg",
+        "Bytes":  540700
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/banner-toppings.jpg",
+        "File":  "imagenes\\original\\img\\productos\\banner-toppings.jpg",
+        "Bytes":  363094
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/butifarra_antioquena.jpg",
+        "File":  "imagenes\\original\\img\\productos\\butifarra_antioquena.jpg",
+        "Bytes":  26345
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/butifarra_coctel.jpg",
+        "File":  "imagenes\\original\\img\\productos\\butifarra_coctel.jpg",
+        "Bytes":  29565
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/butifarra_costena.jpg",
+        "File":  "imagenes\\original\\img\\productos\\butifarra_costena.jpg",
+        "Bytes":  29568
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/butifarra_llanera.jpg",
+        "File":  "imagenes\\original\\img\\productos\\butifarra_llanera.jpg",
+        "Bytes":  30987
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/butifarra_santarrosana.jpg",
+        "File":  "imagenes\\original\\img\\productos\\butifarra_santarrosana.jpg",
+        "Bytes":  24940
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/chorizo_antioqueno.jpg",
+        "File":  "imagenes\\original\\img\\productos\\chorizo_antioqueno.jpg",
+        "Bytes":  36742
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/chorizo_casero.jpg",
+        "File":  "imagenes\\original\\img\\productos\\chorizo_casero.jpg",
+        "Bytes":  34599
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/chorizo_cerdo.jpg",
+        "File":  "imagenes\\original\\img\\productos\\chorizo_cerdo.jpg",
+        "Bytes":  35628
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/chorizo_coctel.jpg",
+        "File":  "imagenes\\original\\img\\productos\\chorizo_coctel.jpg",
+        "Bytes":  30769
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/chorizo_llanerito.jpg",
+        "File":  "imagenes\\original\\img\\productos\\chorizo_llanerito.jpg",
+        "Bytes":  28296
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/chorizo_santarrosano.jpg",
+        "File":  "imagenes\\original\\img\\productos\\chorizo_santarrosano.jpg",
+        "Bytes":  34385
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/chorizo_tradicional.jpg",
+        "File":  "imagenes\\original\\img\\productos\\chorizo_tradicional.jpg",
+        "Bytes":  39503
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/chorizos.jpg",
+        "File":  "imagenes\\original\\img\\productos\\chorizos.jpg",
+        "Bytes":  37535
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/costilla_cerdo_ahumada.jpg",
+        "File":  "imagenes\\original\\img\\productos\\costilla_cerdo_ahumada.jpg",
+        "Bytes":  36784
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/costilla_sin_hueso.jpg",
+        "File":  "imagenes\\original\\img\\productos\\costilla_sin_hueso.jpg",
+        "Bytes":  39987
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/hamburguesa_cocida.jpg",
+        "File":  "imagenes\\original\\img\\productos\\hamburguesa_cocida.jpg",
+        "Bytes":  33995
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/hamburguesa_pura_carne.jpg",
+        "File":  "imagenes\\original\\img\\productos\\hamburguesa_pura_carne.jpg",
+        "Bytes":  35316
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/hamburguesas.jpg",
+        "File":  "imagenes\\original\\img\\productos\\hamburguesas.jpg",
+        "Bytes":  34203
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/jamon_cerdo_ahumado.jpg",
+        "File":  "imagenes\\original\\img\\productos\\jamon_cerdo_ahumado.jpg",
+        "Bytes":  32763
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/mortadela_cervecera.jpg",
+        "File":  "imagenes\\original\\img\\productos\\mortadela_cervecera.jpg",
+        "Bytes":  41713
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/mortadela_con_verduras.jpg",
+        "File":  "imagenes\\original\\img\\productos\\mortadela_con_verduras.jpg",
+        "Bytes":  29852
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/mortadela_jamonada.jpg",
+        "File":  "imagenes\\original\\img\\productos\\mortadela_jamonada.jpg",
+        "Bytes":  38664
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/pepperoni.jpg",
+        "File":  "imagenes\\original\\img\\productos\\pepperoni.jpg",
+        "Bytes":  10951
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/salami.jpg",
+        "File":  "imagenes\\original\\img\\productos\\salami.jpg",
+        "Bytes":  10951
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/salchicha_americana.jpg",
+        "File":  "imagenes\\original\\img\\productos\\salchicha_americana.jpg",
+        "Bytes":  41459
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/salchicha_desayuno.jpg",
+        "File":  "imagenes\\original\\img\\productos\\salchicha_desayuno.jpg",
+        "Bytes":  39458
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/salchicha_hot_dog.jpg",
+        "File":  "imagenes\\original\\img\\productos\\salchicha_hot_dog.jpg",
+        "Bytes":  26667
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/salchichas.jpg",
+        "File":  "imagenes\\original\\img\\productos\\salchichas.jpg",
+        "Bytes":  39439
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/salchichon_cervecero.jpg",
+        "File":  "imagenes\\original\\img\\productos\\salchichon_cervecero.jpg",
+        "Bytes":  42102
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/salchichon_gourmet.jpg",
+        "File":  "imagenes\\original\\img\\productos\\salchichon_gourmet.jpg",
+        "Bytes":  37987
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/tocineta_ahumada.jpg",
+        "File":  "imagenes\\original\\img\\productos\\tocineta_ahumada.jpg",
+        "Bytes":  44349
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/tocineta_estandar.jpg",
+        "File":  "imagenes\\original\\img\\productos\\tocineta_estandar.jpg",
+        "Bytes":  27358
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/topping_chorizo.jpg",
+        "File":  "imagenes\\original\\img\\productos\\topping_chorizo.jpg",
+        "Bytes":  18897
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/topping_jamon.jpg",
+        "File":  "imagenes\\original\\img\\productos\\topping_jamon.jpg",
+        "Bytes":  16317
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/topping_meatball.jpg",
+        "File":  "imagenes\\original\\img\\productos\\topping_meatball.jpg",
+        "Bytes":  23060
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/topping_pepperoni.jpg",
+        "File":  "imagenes\\original\\img\\productos\\topping_pepperoni.jpg",
+        "Bytes":  17766
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/topping_salami.jpg",
+        "File":  "imagenes\\original\\img\\productos\\topping_salami.jpg",
+        "Bytes":  18326
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/productos/topping_tocineta.jpg",
+        "File":  "imagenes\\original\\img\\productos\\topping_tocineta.jpg",
+        "Bytes":  18873
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/arroz_salchicha.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\arroz_salchicha.jpg",
+        "Bytes":  58590
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/banner-recetas.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\banner-recetas.jpg",
+        "Bytes":  260065
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/ceviche_chorizo.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\ceviche_chorizo.jpg",
+        "Bytes":  48947
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/chorizo_caramelizado.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\chorizo_caramelizado.jpg",
+        "Bytes":  45897
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/empanadas_jamon.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\empanadas_jamon.jpg",
+        "Bytes":  54452
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/hamburguesa.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\hamburguesa.jpg",
+        "Bytes":  39613
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/huevos_salchicha.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\huevos_salchicha.jpg",
+        "Bytes":  51871
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/pizza_salami.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\pizza_salami.jpg",
+        "Bytes":  54147
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/sandwich_mortadela.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\sandwich_mortadela.jpg",
+        "Bytes":  53110
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/spaghetti_tocineta.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\spaghetti_tocineta.jpg",
+        "Bytes":  39990
+    },
+    {
+        "Url":  "https://smfoodscompany.com/img/recetas/suero_costeno.jpg",
+        "File":  "imagenes\\original\\img\\recetas\\suero_costeno.jpg",
+        "Bytes":  46189
+    }
+]

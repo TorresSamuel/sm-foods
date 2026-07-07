@@ -28,6 +28,7 @@ body {
   font-family: var(--font-main);
   background: var(--color-white);
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 img {
@@ -162,6 +163,14 @@ a {
   font-size: 1.55rem;
   font-weight: 950;
   letter-spacing: 0;
+  overflow: hidden;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.18rem;
 }
 
 .brand-text {
@@ -206,9 +215,14 @@ a {
 
 .hero-placeholder {
   background:
+    linear-gradient(120deg, rgba(12, 12, 12, 0.86) 0%, rgba(35, 35, 35, 0.42) 46%, rgba(137, 13, 34, 0.22) 100%),
+    url("../imagenes/original/img/home/slider1.jpg"),
     radial-gradient(circle at 75% 30%, rgba(200, 16, 46, 0.72), transparent 28%),
     linear-gradient(120deg, rgba(12, 12, 12, 0.96) 0%, rgba(35, 35, 35, 0.84) 42%, rgba(137, 13, 34, 0.78) 100%),
     repeating-linear-gradient(135deg, rgba(255,255,255,0.08) 0 2px, transparent 2px 18px);
+  background-position: center right, center right, center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+  background-size: cover, contain, cover, cover, auto;
 }
 
 .hero-overlay {
@@ -281,31 +295,111 @@ a {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-sm);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .image-placeholder::after,
 .product-media::after,
 .recipe-media::after,
 .gallery-item::after {
-  content: attr(data-image-slot);
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  max-width: calc(100% - 2rem);
-  padding: 0.45rem 0.65rem;
-  color: rgba(255, 255, 255, 0.82);
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 999px;
-  font-size: 0.72rem;
+  content: none;
 }
 
-.color-a { background: linear-gradient(135deg, #7D1020, #E05E45); }
-.color-b { background: linear-gradient(135deg, #1C1C1C, #B5B5B5); }
-.color-c { background: linear-gradient(135deg, #C8102E, #F1B24A); }
-.color-d { background: linear-gradient(135deg, #2E2E2E, #A21731); }
-.color-e { background: linear-gradient(135deg, #595959, #D9D9D9); }
+.color-a,
+.color-b,
+.color-c,
+.color-d,
+.color-e,
+.about-visual,
+.gallery-item {
+  background-color: #111111;
+}
+
+.about-visual {
+  background-image: url("../imagenes/original/img/home/slider2.jpg");
+}
+
+[data-image-slot="assets/img/chorizo-topping.jpg"] {
+  background-image: url("../imagenes/original/img/productos/topping_chorizo.jpg");
+}
+
+[data-image-slot="assets/img/chorizo.jpg"] {
+  background-image: url("../imagenes/original/img/productos/chorizo_tradicional.jpg");
+}
+
+[data-image-slot="assets/img/meat-ball.jpg"] {
+  background-image: url("../imagenes/original/img/productos/topping_meatball.jpg");
+}
+
+[data-image-slot="assets/img/pepperoni.jpg"] {
+  background-image: url("../imagenes/original/img/productos/topping_pepperoni.jpg");
+}
+
+[data-image-slot="assets/img/jamon.jpg"] {
+  background-image: url("../imagenes/original/img/productos/jamon_cerdo_ahumado.jpg");
+}
+
+[data-image-slot="assets/img/recetas/ceviche-chorizo.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/ceviche_chorizo.jpg");
+}
+
+[data-image-slot="assets/img/recetas/pizza-salami.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/pizza_salami.jpg");
+}
+
+[data-image-slot="assets/img/recetas/empanadas-jamon.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/empanadas_jamon.jpg");
+}
+
+[data-image-slot="assets/img/recetas/sandwich-mortadela.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/sandwich_mortadela.jpg");
+}
+
+[data-image-slot="assets/img/recetas/spaghetti-tocineta.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/spaghetti_tocineta.jpg");
+}
+
+[data-image-slot="assets/img/recetas/hamburguesa-clasica.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/hamburguesa.jpg");
+}
+
+[data-image-slot="assets/img/recetas/suero-butifarra.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/suero_costeno.jpg");
+}
+
+[data-image-slot="assets/img/recetas/huevos-salchicha.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/huevos_salchicha.jpg");
+}
+
+[data-image-slot="assets/img/recetas/arroz-salchicha.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/arroz_salchicha.jpg");
+}
+
+[data-image-slot="assets/img/recetas/chorizo-caramelizado.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/chorizo_caramelizado.jpg");
+}
+
+[data-image-slot="assets/img/gallery-1.jpg"] {
+  background-image: url("../imagenes/original/img/productos/banner-chorizos.jpg");
+}
+
+[data-image-slot="assets/img/gallery-2.jpg"] {
+  background-image: url("../imagenes/mejoradas/1E8A0024.jpg");
+}
+
+[data-image-slot="assets/img/gallery-3.jpg"] {
+  background-image: url("../imagenes/original/img/recetas/banner-recetas.jpg");
+}
+
+[data-image-slot="assets/img/gallery-4.jpg"] {
+  background-image: url("../imagenes/original/img/home/slider3.jpg");
+}
+
+[data-image-slot="assets/img/gallery-5.jpg"] {
+  background-image: url("../imagenes/mejoradas/1E8A0038.jpg");
+}
 
 /* About */
 .about-section {
@@ -317,8 +411,15 @@ a {
   display: grid;
   place-items: center;
   color: var(--color-white);
-  background: linear-gradient(135deg, #191919, #C8102E 52%, #E9E9E9);
+  background-color: #111111;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   box-shadow: var(--shadow-soft);
+}
+
+.about-visual span {
+  display: none;
 }
 
 .about-section p:not(.eyebrow) {
@@ -353,6 +454,44 @@ a {
   margin-top: 0.35rem;
   color: var(--color-muted);
   font-size: 0.86rem;
+}
+
+.about-video-panel {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.42fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-video-copy h3 {
+  margin: 0;
+  color: var(--color-black);
+  font-size: clamp(1.5rem, 3vw, 2.35rem);
+  font-weight: 900;
+  line-height: 1.08;
+}
+
+.about-video-frame {
+  width: 100%;
+  max-height: 34rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: #111111;
+}
+
+.about-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  background: #111111;
 }
 
 /* Certification */
@@ -451,11 +590,15 @@ a {
   overflow: hidden;
 }
 
+.products-heading {
+  max-width: 58rem;
+}
+
 .product-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .filter-btn {
@@ -555,8 +698,9 @@ a {
 
 .recipe-media {
   min-height: 15rem;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .recipe-card-featured .recipe-media {
@@ -1143,6 +1287,7 @@ a {
 
   .recipe-card-featured,
   .certification-panel,
+  .about-video-panel,
   .form-row,
   .recipe-detail {
     grid-template-columns: 1fr;

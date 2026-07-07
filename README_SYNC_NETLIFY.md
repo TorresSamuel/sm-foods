@@ -18,3 +18,4 @@ El archivo `netlify.toml` publica esta carpeta directamente.
 - Para que funcione, esta PC debe tener permiso de `git push` al repo.
 - Si trabajas desde otra cuenta o computador, tambien debe subir cambios al mismo repo/rama.
 - Si cierras la ventana del sincronizador, los cambios se quedan locales hasta que vuelvas a abrirlo o hagas push manual.
+- Los videos `.mp4` se manejan con Git LFS para que GitHub y Netlify puedan recibir archivos grandes.

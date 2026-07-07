@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const quoteModal = document.getElementById("quoteModal");
   const recipeModal = document.getElementById("recipeModal");
   const whatsappLink = document.querySelector("[data-whatsapp]");
+  const limitedVideos = document.querySelectorAll("[data-max-duration]");
 
   const updateHeader = () => {
     header?.classList.toggle("is-scrolled", window.scrollY > 24);
@@ -126,6 +127,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   whatsappLink?.addEventListener("click", () => {
     whatsappLink.href = buildWhatsappUrl("Hola SM Foods, quiero recibir informacion del portafolio para mi negocio.");
+  });
+
+  limitedVideos.forEach((video) => {
+    const maxDuration = Number(video.dataset.maxDuration);
+    if (!Number.isFinite(maxDuration) || maxDuration <= 0) return;
+
+    video.addEventListener("timeupdate", () => {
+      if (video.currentTime >= maxDuration) {
+        video.pause();
+        video.currentTime = 0;
+      }
+    });
   });
 });
 

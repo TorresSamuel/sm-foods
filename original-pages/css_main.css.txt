@@ -1,0 +1,118 @@
+﻿/* Fuentes */
+@font-face {
+    font-family: 'DINProCond';
+    src: url('../fonts/din-pro-cond/DINProCond-Regular.eot');
+    src: url('../fonts/din-pro-cond/DINProCond-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din-pro-cond/DINProCond-Regular.woff2') format('woff2'),
+         url('../fonts/din-pro-cond/DINProCond-Regular.woff') format('woff'),
+         url('../fonts/din-pro-cond/DINProCond-Regular.ttf') format('truetype'),
+         url('../fonts/din-pro-cond/DINProCond-Regular.svg#DINProCond-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINProCondMedium';
+    src: url('../fonts/din-pro-cond-medium/DINProCond-Medium.eot');
+    src: url('../fonts/din-pro-cond-medium/DINProCond-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din-pro-cond-medium/DINProCond-Medium.woff2') format('woff2'),
+         url('../fonts/din-pro-cond-medium/DINProCond-Medium.woff') format('woff'),
+         url('../fonts/din-pro-cond-medium/DINProCond-Medium.ttf') format('truetype'),
+         url('../fonts/din-pro-cond-medium/DINProCond-Medium.svg#DINProCond-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'DINProCond', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DINProCondMedium', sans-serif;
+}
+
+header img {
+    max-height: 80px;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.carousel-item img {
+    max-height: 600px; /* Ajusta este valor segÃºn tu diseÃ±o */
+    object-fit: cover;
+}
+
+.productos-destacados .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.parallax {
+    background-image: url('../img/parallax.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Estilos de cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Contenedor de productos destacados */
+.productos-destacados {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.productos-destacados .card {
+    margin-bottom: 20px;
+}
+
+.text-white {
+    color: white !important;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+

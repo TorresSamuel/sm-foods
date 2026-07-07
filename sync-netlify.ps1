@@ -9,15 +9,60 @@ $WatchPaths = @(
 $DebounceSeconds = 8
 $LastChange = Get-Date
 $Pending = $false
+$IgnoredPathParts = @(
+  ".git",
+  ".netlify"
+)
+$IncludedExtensions = @(
+  ".html",
+  ".css",
+  ".js",
+  ".md",
+  ".toml",
+  ".txt",
+  ".jpg",
+  ".jpeg",
+  ".png",
+  ".webp",
+  ".mp4"
+)
 
 function Write-Status($Message) {
   $time = Get-Date -Format "HH:mm:ss"
   Write-Host "[$time] $Message"
 }
 
+function Test-UsefulChange($Path) {
+  if ([string]::IsNullOrWhiteSpace($Path)) {
+    return $true
+  }
+
+  foreach ($part in $IgnoredPathParts) {
+    if ($Path -like "*\$part\*" -or $Path -like "*/$part/*") {
+      return $false
+    }
+  }
+
+  $extension = [System.IO.Path]::GetExtension($Path).ToLowerInvariant()
+  return $IncludedExtensions -contains $extension
+}
+
+function Register-UsefulChange($Path) {
+  if (Test-UsefulChange $Path) {
+    $script:Pending = $true
+    $script:LastChange = Get-Date
+  }
+}
+
 function Invoke-Sync {
   Push-Location $RepoRoot
   try {
+    $branch = (git rev-parse --abbrev-ref HEAD).Trim()
+    if ([string]::IsNullOrWhiteSpace($branch)) {
+      Write-Status "No se pudo detectar la rama actual."
+      return
+    }
+
     $status = git status --short
 
     if ([string]::IsNullOrWhiteSpace($status)) {
@@ -35,7 +80,9 @@ function Invoke-Sync {
 
     $stamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
     git commit -m "Auto update SM Foods site $stamp"
-    git push origin main
+
+    git pull --rebase origin $branch
+    git push origin $branch
     Write-Status "Cambios subidos. Netlify deberia iniciar deploy automaticamente."
   }
   catch {
@@ -62,20 +109,16 @@ foreach ($path in $WatchPaths) {
     $watcher.NotifyFilter = [System.IO.NotifyFilters]'FileName, DirectoryName, LastWrite, Size'
 
     Register-ObjectEvent $watcher Changed -Action {
-      $script:Pending = $true
-      $script:LastChange = Get-Date
+      Register-UsefulChange $Event.SourceEventArgs.FullPath
     } | Out-Null
     Register-ObjectEvent $watcher Created -Action {
-      $script:Pending = $true
-      $script:LastChange = Get-Date
+      Register-UsefulChange $Event.SourceEventArgs.FullPath
     } | Out-Null
     Register-ObjectEvent $watcher Deleted -Action {
-      $script:Pending = $true
-      $script:LastChange = Get-Date
+      Register-UsefulChange $Event.SourceEventArgs.FullPath
     } | Out-Null
     Register-ObjectEvent $watcher Renamed -Action {
-      $script:Pending = $true
-      $script:LastChange = Get-Date
+      Register-UsefulChange $Event.SourceEventArgs.FullPath
     } | Out-Null
 
     $watchers += $watcher

@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - SM Foods Company</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        .contact-hero { background: linear-gradient(135deg, #ff4c4c 0%, #cc0000 100%); color: #fff; padding: 60px 0; margin-bottom: 0; }
+        .contact-hero h1 { font-family: 'DINProCondMedium', sans-serif; font-size: 3rem; margin-bottom: 20px; text-align: center; }
+        .contact-hero p { font-size: 1.2rem; text-align: center; opacity: 0.9; }
+        .contact-section { padding: 80px 0; background-color: #f8f9fa; }
+        .contact-container { max-width: 800px; margin: 0 auto; }
+        .contact-card { background: #fff; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,.1); overflow: hidden; }
+        .contact-header { background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: #fff; padding: 30px; text-align: center; }
+        .contact-header h2 { margin: 0; font-family: 'DINProCondMedium', sans-serif; font-size: 2rem; }
+        .contact-header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .contact-form { padding: 40px; }
+        .form-row { display: flex; gap: 20px; margin-bottom: 20px; }
+        .form-col { flex: 1; }
+        .form-group { margin-bottom: 25px; }
+        .form-group label { font-family: 'DINProCond', sans-serif; font-weight: 600; color: #2c3e50; margin-bottom: 8px; display: block; font-size: 1rem; }
+        .form-control { border: 2px solid #e9ecef; border-radius: 8px; padding: 12px 15px; font-size: 1rem; transition: all .3s ease; width: 100%; font-family: 'DINProCond', sans-serif; }
+        .form-control:focus { border-color: #ff4c4c; box-shadow: 0 0 0 .2rem rgba(255,76,76,.25); outline: none; }
+        .form-control:hover { border-color: #ff4c4c; }
+        textarea.form-control { resize: vertical; min-height: 120px; }
+        .btn-submit { background: linear-gradient(135deg, #ff4c4c 0%, #cc0000 100%); border: none; color: #fff; padding: 15px 40px; border-radius: 8px; font-size: 1.1rem; font-family: 'DINProCondMedium', sans-serif; cursor: pointer; transition: all .3s ease; width: 100%; margin-top: 10px; }
+        .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255,76,76,.3); }
+        .btn-submit:active { transform: translateY(0); }
+        .alert { margin-bottom: 30px; border-radius: 8px; border: none; padding: 15px 20px; font-family: 'DINProCond', sans-serif; }
+        .alert-success { background-color: #d4edda; color: #155724; border-left: 4px solid #28a745; }
+        .alert-danger  { background-color: #f8d7da; color: #721c24; border-left: 4px solid #dc3545; }
+        .alert-warning { background-color: #fff3cd; color: #856404; border-left: 4px solid #ffc107; }
+        .contact-info { background: #2c3e50; color: #fff; padding: 40px; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; }
+        .contact-info-item { text-align: center; flex: 1; min-width: 200px; }
+        .contact-info-item i { font-size: 2rem; color: #ff4c4c; margin-bottom: 15px; display: block; }
+        .contact-info-item h4 { font-family: 'DINProCondMedium', sans-serif; margin-bottom: 10px; font-size: 1.2rem; }
+        .contact-info-item p { margin: 0; opacity: .9; font-family: 'DINProCond', sans-serif; }
+        @media (max-width: 768px) { .form-row { flex-direction: column; gap: 0; } .contact-form { padding: 30px 20px; } .contact-hero h1 { font-size: 2rem; } .contact-info { flex-direction: column; text-align: center; } }
+        .required { color: #ff4c4c; }
+        .form-help { font-size: .875rem; color: #6c757d; margin-top: 5px; font-style: italic; }
+    </style>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/popper/popper.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/index.php">
+            <img src="/img/logo1.png" alt="SM Foods" class="img-fluid" style="max-height: 60px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/nosotros.php">Nosotros</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/productos/chorizos.php">Chorizos</a>
+                        <a class="dropdown-item" href="/productos/hamburguesas.php">Hamburguesas</a>
+                        <a class="dropdown-item" href="/productos/salchichas.php">Salchichas</a>
+                        <a class="dropdown-item" href="/productos/salchichones.php">Salchichones</a>
+                        <a class="dropdown-item" href="/productos/jamones.php">Jamones</a>
+                        <a class="dropdown-item" href="/productos/tocinetas.php">Tocinetas</a>
+                        <a class="dropdown-item" href="/productos/costillas.php">Costillas</a>
+                        <a class="dropdown-item" href="/productos/madurados.php">Madurados</a>
+                        <a class="dropdown-item" href="/productos/mortadelas.php">Mortadelas</a>
+                        <a class="dropdown-item" href="/productos/butifarras.php">Butifarras</a>
+                        <a class="dropdown-item" href="/productos/toppings.php">Toppings</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/recetas.php">Recetas</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contacto.php">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1><i class="fas fa-envelope"></i> Contáctanos</h1>
+            <p>Estamos aquí para ayudarte. Envíanos tu consulta y te responderemos pronto.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container contact-container">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h2>Formulario de Contacto</h2>
+                    <p>Completa el formulario y nos pondremos en contacto contigo</p>
+                </div>
+
+                <div class="contact-form">
+                    
+                    <!-- Importante: enviamos a smtp_mailer.php, pasando 'descripcion' (mapa de 'mensaje') y redirect a esta misma página -->
+                    <form action="/smtp_mailer.php" method="POST" id="contactForm" novalidate>
+                        <!-- Redirección amable de vuelta a ESTA página -->
+                        <input type="hidden" name="redirect" value="https://smfoodscompany.com/contacto.php">
+                        <!-- Token antifraude -->
+                        <input type="hidden" name="form_token" value="1783355258.9d6ea4fdd29cb8d0.bdd7007446e96ec1864769ea0a5a5914a8ce9f1d6b6b1d4e9bc038a19bf823c0">
+                        <!-- Campos ocultos que espera el mailer / telemetría -->
+                        <input type="hidden" name="descripcion" id="descripcion_hidden">
+                        <input type="hidden" name="client_user_agent"   id="client_user_agent">
+                        <input type="hidden" name="client_lang"         id="client_lang">
+                        <input type="hidden" name="client_timezone"     id="client_timezone">
+                        <input type="hidden" name="client_tz_offset"    id="client_tz_offset">
+                        <input type="hidden" name="client_platform"     id="client_platform">
+                        <input type="hidden" name="client_screen"       id="client_screen">
+                        <input type="hidden" name="client_viewport"     id="client_viewport">
+                        <input type="hidden" name="client_connection"   id="client_connection">
+                        <input type="hidden" name="client_referrer"     id="client_referrer">
+                        <input type="hidden" name="client_page_url"     id="client_page_url">
+                        <input type="hidden" name="client_page_load_ts" id="client_page_load_ts">
+                        <input type="hidden" name="client_submit_ts"    id="client_submit_ts">
+                        <input type="hidden" name="client_uid"          id="client_uid">
+                        <!-- Honeypot -->
+                        <div style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;">
+                            <label>Si ves este campo, déjalo vacío</label>
+                            <input type="text" name="hp_url" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre Completo <span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="nombre" name="nombres" required placeholder="Tu nombre completo">
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico <span class="required">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required placeholder="tu@email.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ej: +57 300 123 4567">
+                                    <div class="form-help">Opcional - Para contactarte más rápido</div>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="empresa">Empresa</label>
+                                    <input type="text" class="form-control" id="empresa" placeholder="Nombre de tu empresa">
+                                    <div class="form-help">Opcional - Si representas una empresa</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <select class="form-control" id="asunto">
+                                <option value="Consulta General">Consulta General</option>
+                                <option value="Productos">Información sobre Productos</option>
+                                <option value="Precios">Consulta de Precios</option>
+                                <option value="Distribución">Distribución y Ventas</option>
+                                <option value="Calidad">Control de Calidad</option>
+                                <option value="Sugerencia">Sugerencia</option>
+                                <option value="Reclamo">Reclamo</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje <span class="required">*</span></label>
+                            <textarea class="form-control" id="mensaje" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                            <div class="form-help">Describe tu consulta de manera detallada</div>
+                        </div>
+
+                        <!-- Verificación anti-robot y confirmación -->
+                        <div class="mb-4">
+                            <div class="card border-secondary">
+                                <div class="card-header bg-light text-dark">
+                                    <h5 class="mb-0"><i class="fas fa-robot"></i> Verificación</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3 align-items-center">
+                                        <div class="col-md-6">
+                                            <label for="captcha_answer" class="form-label">
+                                                Resuelva: <strong>6 + 3 = ?</strong>
+                                            </label>
+                                            <input type="number" class="form-control" id="captcha_answer" name="captcha_answer" required placeholder="Resultado">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check mt-4">
+                                                <input class="form-check-input" type="checkbox" id="confirm_envio" name="confirm_send" value="1" required>
+                                                <label class="form-check-label" for="confirm_envio">
+                                                    <strong>Confirmo</strong> que deseo enviar este mensaje.
+                                                </label>
+                                            </div>
+                                            <div class="form-text">Evita envíos accidentales.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>servicioalcliente@smfoodscompany.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>WhatsApp</h4>
+                        <p>+57 314 308 2243</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Horarios</h4>
+                        <p>Lunes a Viernes<br>8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/index.php" class="text-white">Home</a></li>
+                    <li><a href="/nosotros.php" class="text-white">Nosotros</a></li>
+                    <li><a href="/productos.php" class="text-white">Productos</a></li>
+                    <li><a href="/recetas.php" class="text-white">Recetas</a></li>
+                    <li><a href="/contacto.php" class="text-white">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <address>
+                    Carrera 132 # 22A 57<br>
+                    Fontibón Bogotá<br>
+                    Colombia
+                </address>
+                <div class="d-flex flex-column gap-2">
+                    <a href="/ptee/" class="btn btn-primary">
+                        <i class="fas fa-shield-alt"></i> Programa de Transparencia y Ética Empresarial - PTEE
+                    </a>
+
+                    <button class="btn btn-danger w-100 mb-2" style="background-color:#d32f2f;border:none;" onclick="window.location.href='/linearoja/'">
+                            <i class="fa fa-exclamation-triangle"></i> Linea roja (Reporte de acoso sexual - Acoso laboral)
+                        </button>
+                        <a href="https://wa.me/573143082243" target="_blank" class="btn btn-danger">
+                            <i class="fab fa-whatsapp"></i> Chat en WhatsApp
+                        </a>
+                        
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="/img/logo.png" alt="SM Foods" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 SM Foods Company. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<script>
+// ===== Validaciones del formulario (cliente) =====
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    var nombre  = document.getElementById('nombre').value.trim();
+    var email   = document.getElementById('email').value.trim();
+    var telefono= document.getElementById('telefono').value.trim();
+    var empresa = document.getElementById('empresa').value.trim();
+    var asunto  = document.getElementById('asunto').value;
+    var mensaje = document.getElementById('mensaje').value.trim();
+
+    resetErrorStyles();
+    var hasErrors = false;
+
+    if (nombre === '' || nombre.length < 2) {
+        showFieldError('nombre', nombre === '' ? 'El nombre es obligatorio' : 'El nombre debe tener al menos 2 caracteres');
+        hasErrors = true;
+    }
+    if (email === '' || !validateEmail(email)) {
+        showFieldError('email', email === '' ? 'El email es obligatorio' : 'Por favor, introduce un email válido');
+        hasErrors = true;
+    }
+    if (telefono !== '' && !validatePhone(telefono)) {
+        showFieldError('telefono', 'Formato de teléfono inválido');
+        hasErrors = true;
+    }
+    if (mensaje === '' || mensaje.length < 10) {
+        showFieldError('mensaje', mensaje === '' ? 'El mensaje es obligatorio' : 'El mensaje debe tener al menos 10 caracteres');
+        hasErrors = true;
+    }
+
+    if (hasErrors) {
+        event.preventDefault();
+        document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+    }
+
+    // Mapear 'mensaje' -> 'descripcion' (lo requiere smtp_mailer.php)
+    var descHidden = document.getElementById('descripcion_hidden');
+    descHidden.value =
+        'Asunto: ' + asunto + '\\n' +
+        (empresa ? ('Empresa: ' + empresa + '\\n') : '') +
+        '\\n' +
+        mensaje;
+
+    // Telemetría: marcar timestamp de envío
+    document.getElementById('client_submit_ts').value = Date.now().toString();
+
+    // Feedback visual
+    var submitBtn = document.querySelector('.btn-submit');
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+    submitBtn.disabled = true;
+});
+
+function validateEmail(email) {
+    var re = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    return re.test(email);
+}
+function validatePhone(phone) {
+    var re = /^[\\+]?[0-9\\s\\-\\(\\)]{7,15}$/;
+    return re.test(phone);
+}
+function showFieldError(fieldId, message) {
+    var field = document.getElementById(fieldId);
+    field.style.borderColor = '#dc3545';
+    field.style.boxShadow = '0 0 0 0.2rem rgba(220,53,69,.25)';
+    var existingError = field.parentNode.querySelector('.error-message');
+    if (existingError) existingError.remove();
+    var errorDiv = document.createElement('div');
+    errorDiv.className = 'error-message';
+    errorDiv.style.color = '#dc3545';
+    errorDiv.style.fontSize = '0.875rem';
+    errorDiv.style.marginTop = '5px';
+    errorDiv.innerHTML = '<i class="fas fa-exclamation-circle"></i> ' + message;
+    field.parentNode.appendChild(errorDiv);
+}
+function resetErrorStyles() {
+    ['nombre','email','telefono','mensaje'].forEach(function(id){
+        var field = document.getElementById(id);
+        field.style.borderColor = '#e9ecef';
+        field.style.boxShadow = 'none';
+        var err = field.parentNode.querySelector('.error-message');
+        if (err) err.remove();
+    });
+}
+
+// ===== Telemetría de cliente (mismos campos que en canal-transparencia) =====
+(function () {
+    var $ = function(id){ return document.getElementById(id); };
+    var loadTs = Date.now();
+    function uuidv4() {
+        if (window.crypto && window.crypto.randomUUID) return window.crypto.randomUUID();
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){
+            var r = Math.random()*16|0, v = c === 'x' ? r : (r&0x3|0x8);
+            return v.toString(16);
+        });
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        var ua    = navigator.userAgent || '';
+        var lang  = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+        var tz    = (Intl.DateTimeFormat().resolvedOptions().timeZone || '');
+        var tzOff = new Date().getTimezoneOffset(); // min
+        var plat  = navigator.platform || '';
+        var scr   = (window.screen ? (screen.width + 'x' + screen.height) : '') + (window.devicePixelRatio ? ('@' + window.devicePixelRatio) : '');
+        var vp    = (window.innerWidth + 'x' + window.innerHeight);
+        var conn  = (navigator.connection && navigator.connection.effectiveType) ? navigator.connection.effectiveType : '';
+        var ref   = document.referrer || '';
+        var url   = window.location.href;
+
+        $('client_user_agent').value   = ua;
+        $('client_lang').value         = lang;
+        $('client_timezone').value     = tz;
+        $('client_tz_offset').value    = tzOff;
+        $('client_platform').value     = plat;
+        $('client_screen').value       = scr;
+        $('client_viewport').value     = vp;
+        $('client_connection').value   = conn;
+        $('client_referrer').value     = ref;
+        $('client_page_url').value     = url;
+        $('client_page_load_ts').value = loadTs.toString();
+        $('client_uid').value          = uuidv4();
+    });
+})();
+</script>
+

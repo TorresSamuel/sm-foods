@@ -1,0 +1,100 @@
+﻿/* Estilos para la banda de color */
+
+.carousel-item img {
+    max-height: 600px;
+    object-fit: cover;
+}
+.banda-color {
+    background-color: #a8d5ba; /* Verde tenue */
+    padding: 50px 0;
+}
+
+.banda-color h2 {
+    color: #fff;
+}
+
+/* Estilos para el parallax */
+.parallax {
+    background-image: url('../img/home/parallax.jpg');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.parallax-inner {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Estilos para las cards de productos destacados */
+.productos-destacados-banda {
+    background-color: #a8d5ba; /* Verde tenue */
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos-destacados-banda h2 {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.productos-destacados .card {
+    background-color: #333; /* Color oscuro para las tarjetas */
+    color: white;
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.productos-destacados .card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.productos-destacados .card:hover {
+    transform: translateY(-10px) rotate(3deg); /* InclinaciÃ³n y elevaciÃ³n */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); /* Sombra mÃ¡s pronunciada */
+}
+
+.productos-destacados .card:hover img {
+    transform: scale(1.1);
+}
+
+.productos-destacados .card .card-body {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.productos-destacados .card:hover .card-body {
+    background-color: #444;
+}
+
+.productos-destacados .card .card-body h5,
+.productos-destacados .card .card-body p {
+    transition: color 0.3s ease-in-out;
+}
+
+.productos-destacados .card:hover .card-body h5,
+.productos-destacados .card:hover .card-body p {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
