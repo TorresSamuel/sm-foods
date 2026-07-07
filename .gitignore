@@ -1,2 +1,4 @@
 # Local Netlify folder
 .netlify
+.codex_tmp_video_tools/
+videos/Corporativo.mp4
